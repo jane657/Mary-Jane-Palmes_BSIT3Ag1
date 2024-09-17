@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Login</title>
+</head>
+
+<style>
+
+table{
+    margin: auto; 
+    background-color: #189de4; 
+    text-align: center;
+    padding: 10px 10px; 
+    height: 225px; 
+    width: 300px;
+    box-shadow: 0 1px 20px; 
+    border: 1px solid dark blue; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+button {
+    background-color: #1560bd;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20%;
+}
+
+  button:hover {
+  background-color:  #0062cc;
+}
+</style>
+<body>
+<table>
+<form action="#">
+</tr>
+<td>
+<h1 style="font-size: 35px; color: white;">Login</h1>
+
+<label style="color: white;">Username:</label>
+<input id="uname" name="uname" type="text" placeholder="Enter username"></input><br>
+<br>
+<label style="color: white;">Password:</label>
+<input id="pass" name="pass" type="password" placeholder="Enter password"></input><br>
+<br>
+<button  style="cursor: pointer;" type="button" onclick="window.location.href = 'index.html'">OK</button>
+<button style="cursor: pointer;" type="reset" value="reset">CANCEL</button>
+</td>
+</tr>
+</form>
+
+</table>
+</body>
+</html>

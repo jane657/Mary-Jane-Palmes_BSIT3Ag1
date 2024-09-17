@@ -1,0 +1,203 @@
+<html>
+<head>
+<title>Profile Form</title>
+</head>
+
+<style>
+table{
+     margin: auto; 
+     background-color: #8dcee4; 
+     padding: 20px 20px; 
+     height: 200px; 
+     box-shadow: 0 1px 5px; 
+     border: 1px solid black; 
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bg1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.10);
+    border: 3px solid white;
+}
+
+button {
+    background-color: #1560bd;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20%;
+	cursor: pointer;
+}
+
+  button:hover {
+  background-color:  #0062cc;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+	background-color: #1560bd;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20%;
+}
+	
+</style>
+<body>
+<button class="back-button" type="button" onclick="window.location.href = 'index.html'">Back</button>
+<table style="margin-left: 24%; position: absolute;">
+<center><h1>Student Form</h1></center>
+
+<form action="#">
+
+<tr>
+<td>
+<fieldset>
+<legend><h3>Profile</h3></legend>
+<label>Description:</label>
+<br>
+<textarea name="answer" id="answer" cols="30" rows="4"></textarea>
+<br>
+</td>
+</tr>
+
+<tr>
+<td>
+<fieldset>
+<legend><h3>Educational Background</h3></legend>
+<label for="year">Year:</label>
+<input id="year" name="year" type="number">
+<br>
+<label for="school">School:</label>
+<input id="sname" name="sname" type="text">
+<br>
+<label for="level">Level:</label>
+<select id="level" name="level">
+<option value="elem">Elementary</option>
+<option value="jh">Junior High</option>
+<option value="sh">Senior High</option>
+<option value="col">College</option>
+</select><br>
+<br>
+
+<label>Skills:</label>
+<br>
+<textarea name="answer" id="answer" cols="30" rows="3"></textarea>
+<br>
+
+<br>
+<label>Expertise:</label>
+<br>
+<textarea name="answer" id="answer" cols="30" rows="3"></textarea>
+</fieldset>
+</td>
+</tr>
+
+<tr>
+<td>
+<fieldset>
+<legend><h3>Hobbies</h3></legend>
+<label>List:</label>
+<br>
+<textarea name="answer" id="answer" cols="30" rows="2"></textarea>
+<br>
+</fieldset>
+</td>
+</tr>
+</form>
+</table>
+
+
+
+<table style="margin-left: 50%;">
+<form action="#">
+<tr>
+<td>
+<fieldset>
+<legend><h3>Profile Picture</h3></legend>
+<input  type="file"  accept="image/*" id="picture" name="picture" required>
+<br>
+</fieldset>
+</td>
+</tr>
+
+<tr>
+<td>
+<fieldset>
+<legend><h3>Student Information</h3></legend>
+<label for="fname">First Name:</label>
+<input id="fname" name="fname" type="text" required>
+<br>
+<label for="mname">Middle Name:</label>
+<input id="mname" name="mname" type="text" placeholder="(optional)">
+<br>
+<label for="lname">Last Name:</label>
+<input id="lname" name="lname" type="text" required>
+<br>
+<label for="age">Age:</label>
+<input id="age" name="age" type="number"></input>
+<br>
+<label for="bday">Birthday:</label>
+<input id="bday" name="bday" type="date"></input>
+<br>
+</fieldset>
+</td>
+</tr>
+<tr>
+<td>
+<fieldset>
+<legend><h3>Contact Information</h3></legend>
+<label for="cno">Contact No:</label>
+<input id="cno" name="cno" type="text">
+<br>
+<label for="address">Address:</label>
+<input id="address" name="address" type="text">
+<br>
+<label for="email">Email:</label>
+<input id="email" name="email" type="text">
+<br>
+</fieldset>
+</td>
+</tr>
+
+<tr>
+<td>
+<fieldset>
+<legend><h3>Social Media</h3></legend>
+<label for="fd">Facebook:</label>
+<input id="fb" name="fb" type="url">
+<br>
+<label for="twitter">Twitter:</label>
+<input id="twitter" name="twitter" type="url">
+<br>
+<label for="ig">Instagram:</label>
+<input id="ig" name="ig" type="url">
+<br>
+</fieldset>
+</td>
+</tr>
+
+<tr>
+<td>
+<br>
+<button type="submit" value="Submit" style="margin: 0 auto;">SAVE</button>
+<button type="reset" value="reset" style="margin: 0 auto;">RESET</button>
+</td>
+</tr>
+</form>
+</table>
+</body>
+</html>

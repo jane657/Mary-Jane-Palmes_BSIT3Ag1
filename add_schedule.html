@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Schedule Form</title>
+</head>
+
+<style>
+table{
+    margin: auto; 
+    border: 1px solid black;
+    padding: 20px 20px;
+    background-color: #189de4; 
+    text-align: center;
+	box-shadow: 0 1px 5px;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bg1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.10);
+	border: 3px solid white;
+}
+
+td{
+    background-color: #189de4;
+}
+
+th{
+   background-color: lightblue;
+}
+
+button {
+  background-color: #1560bd;
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:  #0062cc;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+	background-color: #1560bd;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20%;
+}
+</style>
+
+<body>
+ <button class="back-button" type="button" onclick="window.location.href = 'index.html'">Back</button>
+<table>
+<br><br>
+<center><h1 style="color: dark blue;">Add Schedule</h1></center>
+<form action="#">
+<tr>
+<th>Start Time</th>
+</tr>
+<tr>
+<td><input type="time" id="end_time" name="start_time" required><br><br></td>
+</tr>
+
+<tr>
+<th>End Time</th>
+</tr>
+
+<tr>
+<td><input type="time" id="end_time" name="start_time" required><br><br></td>
+</tr>
+
+<tr>
+<th>Day</th>
+</tr>
+
+<tr>
+<td><select id="day" name="day" required>
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>   
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+</select><br><br></td>
+</tr>
+
+<tr>
+<th>Subject Code</th>
+</tr>
+
+<tr>
+<td><select id="subject" name="subject" required>
+    <option value="it301">IT 301</option>
+    <option value="it302">IT 302</option>
+    <option value="it303">IT 303</option>   
+    <option value="it304">IT 304</option>
+    <option value="it305">IT 305</option>
+	<option value="it306">IT 306</option>   
+    <option value="it307">IT 307</option>
+    <option value="fl301">FL 301</option>
+</select><br><br></td>
+</tr>
+
+<tr>
+<th>To-do(task)</th>
+</tr>
+
+<tr>
+<td><textarea name="to_do" id="to_do" type="text" placeholder="List your task..."></textarea><br><br></td>
+</tr>
+
+<tr>
+<th>Due Date</th>
+</tr>
+
+<tr>
+<td><input type="date" id="due_date" name="due_date" placeholder="(optional)"><br><br></td>
+</tr>
+
+<tr>
+<td>
+<button type="submit" value="submit">ADD</button>
+<button type="reset" value="reset">RESET</button>
+<td>
+<tr>
+
+</td>
+</tr>
+</form>
+</table>
+</body>
+</html>
