@@ -3,252 +3,274 @@
 <title>Profile</title>
 </head>
 <style>
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: url('bg_pf1.webp') no-repeat;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+table{
+    width: 680px;
+    margin: 60px auto;
+    background: white;
+    height: 922px;
+    box-shadow: 0 2px 10px;
+    background-color: white; 
+}
+
+.left{
+    flex: 1;
+    background-color: #FFF;
+    text-align: left;
+    width: 60%;
+    float: left;
+    height: 785px;
+}
 	
-	body{
-	    border: 5px solid #189de4;
-	}
+.left h4{
+    background: #477FC3;
+    text-decoration: none;
+    margin: 20px 20px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
 
-    
-	table {
-        width: 680px;
-        margin: 60px auto;
-        background: white;
-        height: 922px;
-        box-shadow: 0 2px 20px;
-		background-color: white; 
-    }
+.left ul{
+    line-height: 1.5;
+    margin-left: 40px;
+    margin-right: 40px;
+}
 	
-	.left {
-        flex: 1;
-        background-color: #FFF;
-        text-align: left;
-        width: 60%;
-        float: left;
-        height: 785px;
-	}
+.right{
+    background: #477FC3;
+    width: 40%;
+    flex: 1;
+    padding: 26px;
+    text-align: center;
+    float: left;
+    height: 940px;
+}
+
+.right h4{
+    text-decoration: none;
+    background: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.right ul {
+    font-size: 15px;
+    margin: 20px;
+    color: white;
+}
+
+.right p{
+    font-size: 17px;
+    line-height: 1.5;
+    color: white;
+}
+
+h1{
+    margin-top: 235px;
+    font-size: 45px;
+    color: white;
+}
+
+img{
+    height: 137px;
+    width: 680px;
+    display: flex;
+    margin: auto;
+}
+
+#pf{
+    height: 200px;
+    width: 200px;
+    border: 5px solid #1167b1;
+    margin: 10px 10px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.education-list li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.year{
+    width: 60px;
+    font-size: 1em;
+}
+
+.progress-bar{
+    background: #f3f3f3;
+    width: 90%;
+    height: 8px;
+    border-radius: 5px;
+}
 	
-	 .left h4 {
-        background-color: #8dcee4;
-        text-decoration: none;
-        margin: 20px 20px;
-        color: #fff;
-        font-size: 16px;
-        text-align: center;
-		margin-left: 40px;
-		margin-right: 40px;
-    }
-
-    .left ul {
-        line-height: 1.5;
-		margin-left: 40px;
-		margin-right: 40px;
-		
-    }
-	
-	.right {
-        background-color: #8dcee4;
-        width: 40%;
-        flex: 1;
-        padding: 26px;
-        text-align: center;
-        float: left;
-        height: 800px;
-		margin-top:137px;
-    }
-
-    .right h4 {
-        text-decoration: none;
-        background: #fff;
-        font-size: 16px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .right ul {
-        font-size: 15px;
-        margin: 20px;
-    }
-
-    .right p {
-        font-size: 17px;
-        line-height: 1.5;
-    }
-
-    h1 {
-        margin-top: 95px;
-        font-size: 45px;
-    }
-
-    img {
-        height: 137px;
-        width: 680px;
-        display: flex;
-        margin: auto;
-    }
-
-    .right img {
-        height: 200px;
-        width: 200px;
-        border: 5px solid #1167b1;
-        margin: 10px 10px;
-        border-radius: 50%;
-        position: absolute;
-        top: 90px;
-    }
-
-    .education-list li {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .year {
-        width: 60px;
-        font-size: 1em;
-    }
-
-    .progress-bar {
-        background: #f3f3f3;
-        width: 90%;
-        height: 8px;
-        border-radius: 5px;
-    }
-	
-	.back-button {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        cursor: pointer;
-	    background-color: #1560bd;
-        color: white;
-		border: none;
-        padding: 8px 8px;
-        text-align: center;
-        display: inline-block;
-        font-size: 14px;
-        border-radius: 20%;
+.back-button{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+	background: #19487d;
+    color: white;
+    border: none;
+    padding: 8px 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20%;
+	font-weight: 600;
 }
 </style>
 <body>
- <button class="back-button" type="button" onclick="window.location.href = 'index.html'">Back</button>
+ <button class="back-button" type="button" onclick="window.location.href = 'home_page.html'">Back</button>
 <table>
-        <!--left-side-->
-		<th class="left">
-		<img src="image_1.jpg" /> 
-            <h4 style="margin-top:40px;" >PROFILE</h4>
-            <ul>
-                <p>
-                    A passionate IT student with strong skills in database management. Eager to apply academic knowledge
-                    and technical skills in an immersive internship environment. Seeking an internship to have real-world
-                    experience, work on interesting projects, and continue developing professional IT skills.
-                </p>
-            </ul>
-            <!--skills-section-->
-            <h4>SKILLS</h4>
-            <ul style="margin: 0px 50px; margin-left: 70px;">
-                <li>Time Management</li>
-                <li>Decision Making</li>
-                <li>Communication</li>
-                <li>Problem Solving</li>
-            </ul>
-            <!--education-section-->
-            <h4>EDUCATION</h4>
-            <ul class="education-list" list-style-type="none">
-                <li>
-                    <span class="year">2026</span>
-                    <div class="details">
-                        <strong>BS Information Technology</strong><br>
-                        <span>Bulacan State University</span>
-                    </div>
-                </li>
-                <li>
-                    <span class="year">2022</span>
-                    <div class="details">
-                        <strong>TVL Strand- ICT Programming</strong><br>
-                        <span>ACLC Malolos</span>
-                    </div>
-                </li>
-                <li>
-                    <span class="year">2020</span>
-                    <div class="details">
-                        <strong>Calumpit National High School</strong>
-                    </div>
-                </li>
-                <li>
-                    <span class="year">2016</span>
-                    <div class="details">
-                        <strong>Northville 9 Elementary School</strong>
-                    </div>
-                </li>
-            </ul>
-            <!--experties-section-->
-            <h4>EXPERTIES</h4>
-            <ul style="list-style-type: none; margin: 0 30px; margin-left: 50px;">
-                Animation
-                <div class="progress-bar">
-                    <div style="background: #77c2db; width: 65%; height: 100%;"></div>
-                </div>
-
-                Pencil Project
-                <div class="progress-bar">
-                    <div style="background: #77c2db; width: 60%; height: 100%;"></div>
-                </div>
-
-                Microsoft Excel
-                <div class="progress-bar">
-                    <div style="background: #77c2db; width: 80%; height: 100%;"></div>
-                </div>
-            </ul>
-   </th>
-<th class="right">
-         <img src="profile.jpg"/>
-            <h1>Mary Jane<br>Palmes</h1>
-            <!--contact-section-->
-            <h4>CONTACT</h4>
+    <!--left-side-->
+    <th class="left">
+	<img src="image_1.jpg" /> 
+        <h4 style="margin-top:20px;" >PROFILE</h4>
+        <ul>
             <p>
-                Mary Jane Palmes<br>
-                +63 9197316586<br>
-                Blk31Lot6 Iba O' Este<br>
-                Calumpit, Bulacan<br>
-                janepalmes@gmail.com
+                A passionate IT student with strong skills in database management. Eager to apply academic knowledge
+                and technical skills in an immersive internship environment. Seeking an internship to have real-world
+                experience, work on interesting projects, and continue developing professional IT skills.
             </p>
+        </ul>
+        <!--skills-section-->
+        <h4>SKILLS</h4>
+        <ul style="margin: 0px 50px; margin-left: 70px;">
+            <li>Time Management</li>
+            <li>Decision Making</li>
+            <li>Communication</li>
+            <li>Problem Solving</li>
+        </ul>
+        <!--education-section-->
+        <h4>EDUCATION</h4>
+        <ul class="education-list" list-style-type="none">
+            <li>
+                <span class="year">2026</span>
+                <div class="details">
+                    <strong>BS Information Technology</strong><br>
+                    <span>Bulacan State University</span>
+                </div>
+            </li>
+            <li>
+                <span class="year">2022</span>
+                <div class="details">
+                    <strong>TVL Strand- ICT Programming</strong><br>
+                    <span>ACLC Malolos</span>
+                </div>
+            </li>
+            <li>
+                <span class="year">2020</span>
+                <div class="details">
+                    <strong>Calumpit National High School</strong>
+                </div>
+            </li>
+            <li>
+                <span class="year">2016</span>
+                <div class="details">
+                     <strong>Northville 9 Elementary School</strong>
+                </div>
+            </li>
+        </ul>
+        <!--experties-section-->
+        <h4>EXPERTIES</h4>
+        <ul style="list-style-type: none; margin: 0 30px; margin-left: 50px;">
+            Animation
+            <div class="progress-bar">
+                <div style="background: #477FC3; width: 65%; height: 100%;"></div>
+            </div>
 
-            <!--socialmedia-section-->
-            <h4>SOCIAL MEDIA</h4>
-            <p>
-                <a href="https://www.facebook.com/maryjane.palmes.315/" target="_blank">fb.com/maryjanepalmes</a><br>
-                <a href="https://twitter.com/" target="_blank">twitter@maryjanepalmes</a><br>
-                <a href="https://instagram.com/itsjanee_p" target="_blank">instagram@maryjanepalmes</a>
-            </p>
+            Pencil Project
+            <div class="progress-bar">
+                <div style="background: #477FC3; width: 60%; height: 100%;"></div>
+            </div>
+
+            Microsoft Excel
+            <div class="progress-bar">
+                <div style="background: #477FC3; width: 80%; height: 100%;"></div>
+            </div>
+        </ul>
+    </th>
+	
+    <th class="right">
+    <img id="pf" src="profile.jpg"/>
+        <h1>Mary Jane<br>Palmes</h1>
+        <!--contact-section-->
+        <h4>CONTACT</h4>
+        <p>
+            Mary Jane Palmes<br>
+            +63 9197316586<br>
+            Blk31Lot6 Iba O' Este<br>
+            Calumpit, Bulacan<br>
+            janepalmes@gmail.com
+        </p>
+
+        <!--socialmedia-section-->
+        <h4>SOCIAL MEDIA</h4>
+        <p>
+            <a style="color: #fff;" href="https://www.facebook.com/maryjane.palmes.315/" target="_blank">fb.com/maryjanepalmes</a><br>
+            <a style="color: #fff;" href="https://twitter.com/" target="_blank">twitter@maryjanepalmes</a><br>
+            <a style="color: #fff;" href="https://instagram.com/itsjanee_p" target="_blank">instagram@maryjanepalmes</a>
+        </p>
             
 
-            <!--hobbies-section-->
-            <h4>HOBBIES</h4>
-            <ul
-                style="list-style: none; padding: 0; display: flex; justify-content: space-between; align-items: center;">
-                <li style="text-align: center; margin-bottom: 10px;">
-                    <span class="icon" style="font-size: 20px;"><ion-icon
-                            name="musical-notes-outline"></ion-icon></span><br>
-                    <span class="text">Music</span>
-                </li>
+        <!--hobbies-section-->
+        <h4>HOBBIES</h4>
+        <ul
+            style="list-style: none; padding: 0; display: flex; justify-content: space-between; align-items: center;">
+            <li style="text-align: center; margin-bottom: 10px;">
+                <span class="icon" style="font-size: 20px;"><ion-icon
+                    name="musical-notes-outline"></ion-icon></span><br>
+                <span class="text">Music</span>
+            </li>
 
-                <li style="text-align: center; margin-bottom: 10px;">
-                    <span class="icon" style="font-size: 20px;"><ion-icon name="tv-outline"></ion-icon></span><br>
-                    <span class="text">Movie</span>
-                </li>
+            <li style="text-align: center; margin-bottom: 10px;">
+                <span class="icon" style="font-size: 20px;"><ion-icon name="tv-outline"></ion-icon></span><br>
+                <span class="text">Movie</span>
+            </li>
 
-                <li style="text-align: center; margin-bottom: 10px;">
-                    <span class="icon" style="font-size: 20px;"><ion-icon name="barbell-outline"></ion-icon></span><br>
-                    <span class="text">Exercise</span>
-                </li>
-            </ul>
+            <li style="text-align: center; margin-bottom: 10px;">
+                <span class="icon" style="font-size: 20px;"><ion-icon name="barbell-outline"></ion-icon></span><br>
+                <span class="text">Exercise</span>
+            </li>
+        </ul>
 	</th>
+    <caption>  
+        <p align="center"> 
+		    <h1 style=" margin: 0; color: black;">Student Profile</h1><br>
+	    </p>
+
+		<p align="right">
+			<a href="add_profile.html"> 
+				<input style="padding: 10px 10px; margin: 5px 0; font-size: 14px; background-color: darkblue; color: #fff; border-radius: 20%; cursor: pointer; font-weight: 600;" 
+				type="button" value="Add Information">
+			</a><br>
+	    </p>
+	</caption>
+
 </table>
 </body>
 </html>
