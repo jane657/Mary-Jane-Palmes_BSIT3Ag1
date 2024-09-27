@@ -1,276 +1,223 @@
 <html>
 <head>
-<title>Profile</title>
+<title>Profile Form</title>
 </head>
+
 <style>
 *{
-    box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     display: flex;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
-    background: url('bg_pf1.webp') no-repeat;
+    justify-content: center;
+    background: url('bg_pf.webp') no-repeat;
     text-align: center;
     background-size: cover;
     background-position: center;
+  
 }
 
 table{
-    width: 680px;
-    margin: 60px auto;
-    background: white;
-    height: 922px;
-    box-shadow: 0 2px 10px;
-    background-color: white; 
+    margin: 50px;
+    background: #fff; 
+    padding: 20px 20px; 
+    height: 200px; 
+    box-shadow: 0 1px 5px; 
+    border: 1px solid black; 
 }
 
-.left{
-    flex: 1;
-    background-color: #FFF;
-    text-align: left;
-    width: 60%;
-    float: left;
-    height: 785px;
-}
-	
-.left h4{
-    background: #477FC3;
+
+button{
+    background-color: #1560bd;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
     text-decoration: none;
-    margin: 20px 20px;
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20%;
 }
 
-.left ul{
-    line-height: 1.5;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-	
-.right{
-    background: #477FC3;
-    width: 40%;
-    flex: 1;
-    padding: 26px;
-    text-align: center;
-    float: left;
-    height: 940px;
-}
-
-.right h4{
-    text-decoration: none;
-    background: #fff;
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.right ul {
-    font-size: 15px;
-    margin: 20px;
-    color: white;
-}
-
-.right p{
-    font-size: 17px;
-    line-height: 1.5;
-    color: white;
-}
-
-h1{
-    margin-top: 235px;
-    font-size: 45px;
-    color: white;
-}
-
-img{
-    height: 137px;
-    width: 680px;
-    display: flex;
-    margin: auto;
-}
-
-#pf{
-    height: 200px;
-    width: 200px;
-    border: 5px solid #1167b1;
-    margin: 10px 10px;
-    border-radius: 50%;
-    position: absolute;
-}
-
-.education-list li{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.year{
-    width: 60px;
-    font-size: 1em;
-}
-
-.progress-bar{
-    background: #f3f3f3;
-    width: 90%;
-    height: 8px;
-    border-radius: 5px;
-}
-	
 .back-button{
     position: absolute;
     top: 10px;
     left: 10px;
     cursor: pointer;
-	background: #19487d;
+	background-color: #1560bd;
     color: white;
-    border: none;
     padding: 8px 8px;
     text-align: center;
-    display: inline-block;
     font-size: 14px;
     border-radius: 20%;
 	font-weight: 600;
 }
+
+input{
+    border-color: #369cca;
+    margin: 5px 0;
+    display: inline-block;
+    float: right;
+}
+
+select{
+    border-color: #369cca;
+    margin: 5px 0;
+    display: inline-block;
+    float: right;
+}
+
+textarea{
+    border-color: #369cca;
+}
+
+label{
+    border-color: #369cca;
+    margin: 7px 0;
+    display: inline-block;
+    float: left;
+}
+
+ fieldset{
+    border-color:#369cca;
+    padding: 20px 20px 20px 20px;
+ }
+
+h1{
+    align-items: center;
+    color: #black; 
+    font-size: 36px; 
+    display: flex;
+}
+
 </style>
 <body>
- <button class="back-button" type="button" onclick="window.location.href = 'home_page.html'">Back</button>
+<button class="back-button" type="button" onclick="window.location.href = 'home_page.html'">Back</button>
+
 <table>
-    <!--left-side-->
-    <th class="left">
-	<img src="image_1.jpg" /> 
-        <h4 style="margin-top:20px;" >PROFILE</h4>
-        <ul>
-            <p>
-                A passionate IT student with strong skills in database management. Eager to apply academic knowledge
-                and technical skills in an immersive internship environment. Seeking an internship to have real-world
-                experience, work on interesting projects, and continue developing professional IT skills.
-            </p>
-        </ul>
-        <!--skills-section-->
-        <h4>SKILLS</h4>
-        <ul style="margin: 0px 50px; margin-left: 70px;">
-            <li>Time Management</li>
-            <li>Decision Making</li>
-            <li>Communication</li>
-            <li>Problem Solving</li>
-        </ul>
-        <!--education-section-->
-        <h4>EDUCATION</h4>
-        <ul class="education-list" list-style-type="none">
-            <li>
-                <span class="year">2026</span>
-                <div class="details">
-                    <strong>BS Information Technology</strong><br>
-                    <span>Bulacan State University</span>
-                </div>
-            </li>
-            <li>
-                <span class="year">2022</span>
-                <div class="details">
-                    <strong>TVL Strand- ICT Programming</strong><br>
-                    <span>ACLC Malolos</span>
-                </div>
-            </li>
-            <li>
-                <span class="year">2020</span>
-                <div class="details">
-                    <strong>Calumpit National High School</strong>
-                </div>
-            </li>
-            <li>
-                <span class="year">2016</span>
-                <div class="details">
-                     <strong>Northville 9 Elementary School</strong>
-                </div>
-            </li>
-        </ul>
-        <!--experties-section-->
-        <h4>EXPERTIES</h4>
-        <ul style="list-style-type: none; margin: 0 30px; margin-left: 50px;">
-            Animation
-            <div class="progress-bar">
-                <div style="background: #477FC3; width: 65%; height: 100%;"></div>
-            </div>
+    <form action="#">
+     <td>
+        <h1>Student Form</h1>
+    </td>
+<tr>
+<td>
+<fieldset>
+<legend><h3>Profile</h3></legend>
+<label>Description:</label>
+<br>
+<textarea name="answer" id="answer" cols="30" rows="4" style="width: 265px"></textarea>
+</fieldset>
+<br>
 
-            Pencil Project
-            <div class="progress-bar">
-                <div style="background: #477FC3; width: 60%; height: 100%;"></div>
-            </div>
+<fieldset>
+<legend><h3>Educational Background</h3></legend>
+<label for="year">Year:</label>
+<input id="year" name="year" type="number">
+<br><br>
+<label for="school">School:</label>
+<input id="sname" name="sname" type="text">
+<br><br>
+<label for="level">Level:</label>
+<select id="level" name="level" style="width: 158px">
+<option value="elem">Elementary</option>
+<option value="jh">Junior High</option>
+<option value="sh">Senior High</option>
+<option value="col">College</option>
+</select><br>
+<br><br>
 
-            Microsoft Excel
-            <div class="progress-bar">
-                <div style="background: #477FC3; width: 80%; height: 100%;"></div>
-            </div>
-        </ul>
-    </th>
-	
-    <th class="right">
-    <img id="pf" src="profile.jpg"/>
-        <h1>Mary Jane<br>Palmes</h1>
-        <!--contact-section-->
-        <h4>CONTACT</h4>
-        <p>
-            Mary Jane Palmes<br>
-            +63 9197316586<br>
-            Blk31Lot6 Iba O' Este<br>
-            Calumpit, Bulacan<br>
-            janepalmes@gmail.com
-        </p>
+<label>Skills:</label>
+<br>
+<textarea name="answer" id="answer" cols="30" rows="3"></textarea>
+<br>
 
-        <!--socialmedia-section-->
-        <h4>SOCIAL MEDIA</h4>
-        <p>
-            <a style="color: #fff;" href="https://www.facebook.com/maryjane.palmes.315/" target="_blank">fb.com/maryjanepalmes</a><br>
-            <a style="color: #fff;" href="https://twitter.com/" target="_blank">twitter@maryjanepalmes</a><br>
-            <a style="color: #fff;" href="https://instagram.com/itsjanee_p" target="_blank">instagram@maryjanepalmes</a>
-        </p>
-            
+<br>
+<label>Expertise:</label>
+<br>
+<textarea name="answer" id="answer" cols="30" rows="3"></textarea>
+</fieldset>
+<br>
 
-        <!--hobbies-section-->
-        <h4>HOBBIES</h4>
-        <ul
-            style="list-style: none; padding: 0; display: flex; justify-content: space-between; align-items: center;">
-            <li style="text-align: center; margin-bottom: 10px;">
-                <span class="icon" style="font-size: 20px;"><ion-icon
-                    name="musical-notes-outline"></ion-icon></span><br>
-                <span class="text">Music</span>
-            </li>
+<fieldset>
+<legend><h3>Hobbies</h3></legend>
+<label>List:</label>
+<br>
+<textarea name="answer" id="answer" cols="30" rows="2"></textarea>
+<br>
+</fieldset>
+</td>
 
-            <li style="text-align: center; margin-bottom: 10px;">
-                <span class="icon" style="font-size: 20px;"><ion-icon name="tv-outline"></ion-icon></span><br>
-                <span class="text">Movie</span>
-            </li>
+<td>
+<fieldset>
+<legend><h3>Profile Picture</h3></legend>
+<input  type="file"  accept="image/*" id="picture" name="picture" required>
+<br>
+</fieldset>
+<br>
 
-            <li style="text-align: center; margin-bottom: 10px;">
-                <span class="icon" style="font-size: 20px;"><ion-icon name="barbell-outline"></ion-icon></span><br>
-                <span class="text">Exercise</span>
-            </li>
-        </ul>
-	</th>
-    <caption>  
-        <p align="center"> 
-		    <h1 style=" margin: 0; color: black;">Student Profile</h1><br>
-	    </p>
+<fieldset>
+<legend><h3>Student Information</h3></legend>
+<label for="fname">First Name:</label>
+<input id="fname" name="fname" type="text" required>
+<br>
+<label for="mname">Middle Name:</label>
+<input id="mname" name="mname" type="text" placeholder="(optional)">
+<br>
+<label for="lname">Last Name:</label>
+<input id="lname" name="lname" type="text" required>
+<br><br><br>
+<label for="age">Age:</label>
+<input id="age" name="age" type="number">
+<br><br><br>
+<label for="bday">Birthday:</label>
+<input id="bday" name="bday" type="date" style="width: 158px">
+<br>
+</fieldset>
+<br>
 
-		<p align="right">
-			<a href="add_profile.html"> 
-				<input style="padding: 10px 10px; margin: 5px 0; font-size: 14px; background-color: darkblue; color: #fff; border-radius: 20%; cursor: pointer; font-weight: 600;" 
-				type="button" value="Add Information">
-			</a><br>
-	    </p>
-	</caption>
+<fieldset>
+<legend><h3>Contact Information</h3></legend>
+<label for="cno">Contact No:</label>
+<input id="cno" name="cno" type="text">
+<br>
+<label for="address">Address:</label>
+<input id="address" name="address" type="text">
+<br>
+<label for="email">Email:</label>
+<input id="email" name="email" type="text">
+<br>
+</fieldset>
+<br>
 
+<fieldset>
+<legend><h3>Social Media</h3></legend>
+<label for="fd">Facebook:</label>
+<input id="fb" name="fb" type="url">
+<br>
+<label for="twitter">Twitter:</label>
+<input id="twitter" name="twitter" type="url">
+<br>
+<label for="ig">Instagram:</label>
+<input id="ig" name="ig" type="url">
+<br>
+</fieldset>
+</td>
+</tr>
+<br>
+<tr>
+<td colspan="2">
+<div id="btn" align="center" margin="5px 0" >
+<button type="submit" value="submit" style="margin: 0 auto;">SUBMIT</button>
+<button type="submit" value="button" style="margin: 0 auto;">CANCEL</button>
+<button type="reset" value="reset" style="margin: 0 auto;">RESET</button>
+</div>
+</td>
+</tr>
+</form>
 </table>
 </body>
 </html>
