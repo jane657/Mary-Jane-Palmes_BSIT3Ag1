@@ -1,61 +1,110 @@
 <html>
-<head>
-<title>Home Page</title>
-</head>
+<title>Student Information</title>
 <style>
 
-body {
-  margin: auto;
-  background-color: #189de4;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table{
+    height: 400px;
+    box-shadow: 0 1px 5px;
+
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('bg_hp.jpg') no-repeat;
   text-align: center;
-  padding: 50px;
-  height: 200px;
-  box-shadow: 0 1px 5px;
-  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
 }
 
-a {
-  text-decoration: none;
-  font-size: 25px;
-  color: #fff;
+
+a{
+ 	text-decoration: none;
+	color: #fff;
+	font-size: 30px;
+	padding: 10px 10px;
 }
 
-.back-button {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        cursor: pointer;
-	    background-color: #1560bd;
-        color: white;
-		border: none;
-        padding: 8px 8px;
-        text-align: center;
-        display: inline-block;
-        font-size: 14px;
-        border-radius: 20%;
+tr, td{
+    border: 2px solid white;
+	padding: 30px 30px;
+	text-align: center;
+}
+
+th{
+    font-size: 20px;
+    background-color: #fff;
+}
+
+td{
+    background-color: purple;
+}
+
+.back-button{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+	background: #19487d;
+    color: white;
+    border: none;
+    padding: 8px 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20%;
+	font-weight: 600;
+}
+
+h1{
+    color: white;
 }
 </style>
+
 <body>
-<button class="back-button" type="button" onclick="window.location.href = 'login_form.html'">Login</button>
-  <br>
-  <h1>Home Page</h1>
-  <table style="margin-left: 32%; position: absolute; text-align: center;">
-  <tr>
-  <td>
-  <a href="profile.html">Profile</a><br>
-  <a href="add_profile.html"> Add Profile</a><br>
- 
-   </td>
-  </tr>
-  </table>
+<button class="back-button" type="button" onclick="window.location.href = 'index.html'">Login</button>
   
-  <table style="margin-left: 55%; text-align: center;">
-  <tr>
-  <td>
-  <a href="schedule.html">Class Schedule</a></br>
-  <a href="add_schedule.html">Add Schedule</a>
-  </td>
-  </tr>
+  <table>
+  <form method="POST" action="#" >
+  
+  <th colspan="2">MENU</th>
+  
+   <tr>
+     <td><a href="profile.html">Profile</a></td>
+     <td><a href="add_profile.html"> Add Profile</a></td>
+   </tr>
+  
+   <tr>
+     <td><a href="schedule.html">Class Schedule</a></td>
+     <td><a href="add_schedule.html">Add Schedule</a></td>
+   </tr>
+   
+   <tr>
+   <td style="background-color: orange;"><a href="http://crisostomo3ag1.byethost7.com/">Crisostomo 3A-G1</a></td>
+   <td style="background-color: green;"><a href="http://www.jacinto3ag1.byethost31.com">Jacinto 3A-G1</a></td>
+   </tr>
+   
+   <tr>
+     <td style="background-color: blue;"><a href="http://staana3ag1.byethost7.com/index.html">Sta.Ana 3A-G1</a></td>
+     <td style="background-color: gray;"><a href="http://www.sebastian3ag1.byethost11.com/">Sebastian 3A-G1</a></td>
+   </tr>
+  
+  </form>
+  
+  <caption> 
+    <p align="center"> 
+		<h1 style="margin: 5px 0; color: #fff;">Welcome!</h1><br>
+	</p>
+   </caption>
+
   </table>
 </body>
 </html>
