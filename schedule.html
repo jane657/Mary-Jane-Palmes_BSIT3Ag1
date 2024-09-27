@@ -2,6 +2,7 @@
 <title>Schedule</title>
 <head></head>
 <body>
+
 <style>
 table, tr, td{
     border: 1px solid black;
@@ -14,6 +15,8 @@ th{
 	border-collapse: collapse;
 	background-color: #8dcee4;
 	color: white;
+    padding: 10px 10px;
+    min-height: 100vh;
 }
 
 table{
@@ -25,9 +28,16 @@ table{
 
 body{
     border: 5px solid #189de4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+    background-size: cover;
+    background-position: center;
 }
 
-.back-button {
+.back-button{
     position: absolute;
     top: 10px;
     left: 10px;
@@ -40,44 +50,52 @@ body{
     display: inline-block;
     font-size: 14px;
     border-radius: 20%;
+	font-weight: 600;
 }
-
 </style>
+
 <body>
- <button class="back-button" type="button" onclick="window.location.href = 'index.html'">Back</button>
+    <button class="back-button" type="button" onclick="window.location.href = 'home_page.html'">Back</button>
 <table>
 <br><br>
-<center><h1>Class Schedule</h1></center>
-<center><h4>BSIT 3A-G1</h4></center>
+
 <tr>
-<th>TIME</th>
-<th>MON</th>
-<th>TUE</th>
-<th>WED</th>
-<th>THU</th>
-<th>FRI</th>
+    <th style="width: 15%;">TIME</th>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th style="width: 10%;">SAT</th>
+    <th style="width: 10%;">SUN</th>
 </tr>
 
 <tr>
-<td>7:00 AM - 8:00 AM</td>
-<td bgcolor="lightgreen" rowspan="3">IT 304<pre>
-<li>activity 2</li></td>
-<td bgcolor="lightgreen" rowspan="2">IT 304<pre>
-<li>discussion</li></td>
-<td bgcolor="yellow" rowspan="3">FL 301<pre>
-<li>quiz 1</li></td>
-<td bgcolor="violet" rowspan="3">IT 303<pre>
-<li>activity 1</li></td>
+    <td>7:00 AM - 8:00 AM</td>
+    <td bgcolor="lightgreen" rowspan="3">IT 304<pre>
+        <li>activity 2</li></td>
+    <td bgcolor="lightgreen" rowspan="2">IT 304<pre>
+        <li>discussion</li></td>
+    <td bgcolor="yellow" rowspan="3">FL 301<pre>
+        <li>quiz 1</li></td>
+    <td bgcolor="violet" rowspan="3">IT 303<pre>
+        <li>activity 1</li></td>
+    <td></td>
+    <td></td>
 </tr>
 
 <tr>
 <td>8:00 AM - 9:00 AM</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
 <td>9:00 AM - 10:00 AM</td>
 <td bgcolor="#FF7F7F" rowspan="2">IT 301<pre>
 <li>quiz 1</li></td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
@@ -87,6 +105,8 @@ body{
 <td></td>
 <td bgcolor="orange" rowspan="3">IT 302<pre>
 <li>activity 1</li></td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
@@ -94,14 +114,26 @@ body{
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
 <td>12:00 NN - 1:00 PM</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
 <td>1:00 PM - 2:00 PM</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
@@ -110,6 +142,9 @@ body{
 <td></td>
 <td bgcolor="pink" rowspan="3">IT 306<pre>
 <li>presentation</li></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
@@ -117,6 +152,9 @@ body{
 <td></td>
 <td bgcolor="lightgray" rowspan="3">IT 307<pre>
 <li>activity 1</li></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
@@ -124,6 +162,9 @@ body{
 <td></td>
 <td bgcolor="lightgray" rowspan="2">IT 307<pre>
 <li>discussion</li></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
@@ -133,6 +174,8 @@ body{
 <td></td>
 <td bgcolor="violet" rowspan="2">IT 303<pre>
 <li>discussion</li></td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
@@ -141,11 +184,35 @@ body{
 <td></td>
 <td bgcolor="pink" rowspan="3">IT 306<pre>
 <li>discussion</li></td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
 <td>7:00 PM - 8:00 PM</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
+
+
+<caption> 
+    <p align="center"> 
+		<h1 style="margin: 5px 0; color: black;">Class Schedule</h1>
+        <h3 style="margin: 4px 0; color: black;">BSIT 3A-G1</h3>
+	</p>
+
+    
+	<p align="right">
+		<a href="add_profile.html"> 
+			<input style="padding: 10px 10px; margin: 5px 0; font-size: 14px; background-color: darkblue; color: #fff; border-radius: 20%; font-weight: 600;" type="button" value="Add Schedule">
+		</a>
+        <br>
+	</p>
+</caption>
+
 </table>
 <br><br>
 </body>
