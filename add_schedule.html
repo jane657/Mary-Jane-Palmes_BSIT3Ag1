@@ -2,8 +2,15 @@
 <head>
 <title>Schedule Form</title>
 </head>
-
 <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 table{
     margin: auto; 
     border: 1px solid black;
@@ -14,10 +21,11 @@ table{
 }
 
 body{
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('bg1.jpg') no-repeat;
+    background: url(bg_p.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.10);
@@ -32,7 +40,7 @@ th{
    background-color: lightblue;
 }
 
-button {
+button{
   background-color: #1560bd;
   border: none;
   color: white;
@@ -45,11 +53,11 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover{
   background-color:  #0062cc;
 }
 
-.back-button {
+.back-button{
     position: absolute;
     top: 10px;
     left: 10px;
@@ -61,29 +69,19 @@ button:hover {
     display: inline-block;
     font-size: 14px;
     border-radius: 20%;
+	font-weight: 600;
 }
 </style>
 
 <body>
- <button class="back-button" type="button" onclick="window.location.href = 'index.html'">Back</button>
+ <button class="back-button" type="button" onclick="window.location.href = 'home_page.html'">Back</button>
 <table>
 <br><br>
-<center><h1 style="color: dark blue;">Add Schedule</h1></center>
+<br>
 <form action="#">
-<tr>
-<th>Start Time</th>
-</tr>
-<tr>
-<td><input type="time" id="end_time" name="start_time" required><br><br></td>
-</tr>
-
-<tr>
-<th>End Time</th>
-</tr>
-
-<tr>
-<td><input type="time" id="end_time" name="start_time" required><br><br></td>
-</tr>
+<td>
+<center><h1 style="color: white; margin: 10px;">Add Schedule</h1></center><br>
+</td>
 
 <tr>
 <th>Day</th>
@@ -97,6 +95,28 @@ button:hover {
     <option value="Thursday">Thursday</option>
     <option value="Friday">Friday</option>
 </select><br><br></td>
+</tr>
+
+<tr>
+<th>Time</th>
+</tr>
+
+<tr>
+<td><select id="time" name="time">
+	  <option value="7:00-8:00">7:00 AM - 8:00 AM</option>
+	  <option value="8:00-9:00">8:00 AM - 9:00 AM</option>
+	  <option value="9:00-10:00">9:00 AM - 10:00 AM</option>
+	  <option value="10:00-11:00">10:00 AM - 11:00 AM</option>
+	  <option value="11:00-12:00">11:00 AM - 12:00 NN</option>
+	  <option value="12:00-1:00">12:00 PM - 1:00 PM</option>
+      <option value="1:00-2:00">1:00 PM - 2:00 PM</option>
+	  <option value="2:00-3:00">2:00 PM - 3:00 PM</option>
+	  <option value="3:00-4:00">3:00 PM - 4:00 PM</option>
+	  <option value="4:00-5:00">4:00 PM - 5:00 PM</option>
+	  <option value="5:00-6:00">5:00 PM - 6:00 PM</option>
+      <option value="6:00-7:00">6:00 PM - 7:00 PM</option>
+	  <option value="7:00-8:00">7:00 PM - 8:00 PM</option>
+    </select><br><br></td>
 </tr>
 
 <tr>
@@ -117,24 +137,43 @@ button:hover {
 </tr>
 
 <tr>
-<th>To-do(task)</th>
+<th>Subject Teacher</th>
 </tr>
 
 <tr>
-<td><textarea name="to_do" id="to_do" type="text" placeholder="List your task..."></textarea><br><br></td>
+<td><select id="subject_teacher" name="subject_teacher" required>
+    <option value="N. Reyes">Engr. Noemi Reyes</option>
+    <option value="J. Pulumbarit">Dr. Jaime Pulumbarit</option>
+    <option value="L. Antonio">Lilibeth De Gu Antonio</option>   
+    <option value="A. Caparas">Mr. Alex P. Caparas</option>
+    <option value="M. Castro">Mayleen Dorcas Castro</option>
+	<option value="D. Evale">Digna S. Evale DIT</option>   
+    <option value="R. Bautista">Rosemarie M. Bautista</option>
+    <option value="J. Bayonito">Joshephine R. Bayonito</option>
+</select><br><br></td>
 </tr>
 
 <tr>
-<th>Due Date</th>
+<th>To-do(Task)</th>
 </tr>
 
 <tr>
-<td><input type="date" id="due_date" name="due_date" placeholder="(optional)"><br><br></td>
+<td><select id="task" name="task" required>
+    <option value="quiz">Quiz</option>
+    <option value="presentation">Presentation</option>
+    <option value="recitation">Recitation</option>
+    <option value="discussion">Discussion</option>
+    <option value="assignment">Assignment</option>
+    <option value="lab">Laboratory</option>
+    <option value="act">Activity</option>
+    <option value="exam">Examination</option>
+</select><br><br></td>
 </tr>
 
 <tr>
 <td>
 <button type="submit" value="submit">ADD</button>
+<button type="submit" value="button">CANCEL</button>
 <button type="reset" value="reset">RESET</button>
 <td>
 <tr>
